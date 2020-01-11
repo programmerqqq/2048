@@ -14,12 +14,12 @@
     <body>
         <div id="root">
             <div >
-                <input v-model.trim="inputValue" />
+                <input v-model.trim="inputValue" /><!--set input value-->
                 <button v-on:click="addToDo">press here</button>
             </div>
             <ul>
                 <todo-item v-for="(item,index) of list ":key ="index" :content="item" @delete="handleDelete"></todo-item>
-                
+                <!--how to handle the do do list items-->
             </ul>
         </div>
         <script type="text/Javascript">
